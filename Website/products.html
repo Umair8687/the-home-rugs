@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Inspired Rug & Carpet Website</title>
+    <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="nav-wrapper" style="display:flex;align-items:center;gap:24px;">
+            <img src="images/logo.jpg" alt="Logo" style="height:48px;width:auto;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.07);background:#fff;">
+            <div class="hamburger" id="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <h1>Our Products</h1>
+        <p>Explore our exclusive range of hand-crafted carpets, rugs, and home decor items.</p>
+    </section>
+    <section class="sections" style="flex-wrap: wrap; justify-content: center; gap: 40px;">
+        <div class="section product-popup-card" style="max-width: 320px; cursor:pointer;" data-title="Classic  Rug" data-img="images/20241009_183258.jpg" data-desc="A beautiful, classic carpet design. Perfect for any room. Made of 100% Polypropylene.">
+            <img src="images/20241009_183258.jpg" alt="Classic  Rug" style="width:100%;border-radius:10px;">
+            <h2 style="word-break:break-word;hyphens:auto;">Classic  Rug</h2>
+            <p style="word-break:break-word;hyphens:auto;">A beautiful, classic carpet design. Perfect for any room. Made of 100% Polypropylene. </p>
+        </div>
+        <div class="section product-popup-card" style="max-width: 320px; cursor:pointer;" data-title="Classic Rib Design Rug" data-img="images/20241009_184936.jpg" data-desc="Elegant and durable, this carpet adds style to your home. Made of 100% Polypropylene.">
+            <img src="images/20241009_184936.jpg" alt="Classic Rib Design Rug" style="width:100%;border-radius:10px;">
+            <h2 style="word-break:break-word;hyphens:auto;">Classic Rib Design Rug</h2>
+            <p style="word-break:break-word;hyphens:auto;">Elegant and durable, this carpet adds style to your home. Made of 100% Polypropylene. </p>
+        </div>
+        <div class="section product-popup-card" style="max-width: 320px; cursor:pointer;" data-title="Modern Rug" data-img="images/20241009_232824.jpg" data-desc="Modern rug with a unique pattern. Soft and comfortable. Made of 100% Polypropylene.">
+            <img src="images/20241009_232824.jpg" alt="Modern Rug" style="width:100%;border-radius:10px;">
+            <h2 style="word-break:break-word;hyphens:auto;">Modern Rug</h2>
+            <p style="word-break:break-word;hyphens:auto;">Modern rug with a unique pattern. Soft and comfortable. Made of 100% Polypropylene.</p>
+        </div>
+        <div class="section product-popup-card" style="max-width: 320px; cursor:pointer;" data-title="Modern Braided Rug" data-img="images/20250303_152014.jpg" data-desc="A stylish rug for contemporary interiors. Made of 100% Polypropylene.">
+            <img src="images/20250303_152014.jpg" alt="Modern Braided Rug" style="width:100%;border-radius:10px;">
+            <h2 style="word-break:break-word;hyphens:auto;">Modern Braided Rug</h2>
+            <p style="word-break:break-word;hyphens:auto;">A stylish rug for contemporary interiors.  Made of 100% Polypropylene.</p>
+        </div>        
+        <div class="section product-popup-card" style="max-width: 320px; cursor:pointer;" data-title="Elegant Braided Rug" data-img="images/20250318_121125.jpg" data-desc="Elegant rug for a luxurious feel. Made of 100% Polypropylene.">
+            <img src="images/20250318_121125.jpg" alt="Elegant Braided Rug" style="width:100%;border-radius:10px;">
+            <h2 style="word-break:break-word;hyphens:auto;">Elegant Braided Rug</h2>
+            <p style="word-break:break-word;hyphens:auto;">Elegant rug for a luxurious feel. Made of 100% Polypropylene.</p>
+        </div>
+        <div class="section product-popup-card" style="max-width: 320px; cursor:pointer;" data-title="Cord Rug" data-img="images/20250318_124500.jpg" data-desc="Soft and plush carpet for comfort. Made of 100% Polypropylene.">
+            <img src="images/20250318_124500.jpg" alt="Cord Rug" style="width:100%;border-radius:10px;">
+            <h2 style="word-break:break-word;hyphens:auto;">Cord Rug</h2>
+            <p style="word-break:break-word;hyphens:auto;">Soft and plush rug for comfort. Made of 100% Polypropylene.</p>
+        </div>
+        <div class="section product-popup-card" style="max-width: 320px; cursor:pointer;" data-title="Cord Rug" data-img="images/20250318_124735.jpg" data-desc="Designer rug with a modern touch. Made of 100% Polypropylene.">
+            <img src="images/20250318_124735.jpg" alt="Cord Rug" style="width:100%;border-radius:10px;">
+            <h2 style="word-break:break-word;hyphens:auto;">Cord Rug</h2>
+            <p style="word-break:break-word;hyphens:auto;">Designer rug with a modern touch. Made of 100% Polypropylene.</p>
+        </div>
+        <div class="section product-popup-card" style="max-width: 320px; cursor:pointer;" data-title="Luxury Rug" data-img="images/20250330_162553.jpg" data-desc="Luxury rug for premium interior & exterior. Made of 100% Polypropylene.">
+            <img src="images/20250330_162553.jpg" alt="Luxury Rug" style="width:100%;border-radius:10px;">
+            <h2 style="word-break:break-word;hyphens:auto;">Luxury Rug</h2>
+            <p style="word-break:break-word;hyphens:auto;">Luxury rug for premium interior & exterior. Made of 100% Polypropylene.</p>
+        </div>
+        <div class="section product-popup-card" style="max-width: 320px; cursor:pointer;" data-title="Classic Jute Rug" data-img="images/20250421_201754.jpg" data-desc="Classic jute rug with timeless appeal. Made of Jute + Cotton.">
+            <img src="images/20250421_201754.jpg" alt="Classic Jute Rug" style="width:100%;border-radius:10px;">
+            <h2 style="word-break:break-word;hyphens:auto;">Classic Jute Rug</h2>
+            <p style="word-break:break-word;hyphens:auto;">Classic jute rug with timeless appeal. Made of Jute + Cotton.</p>
+        </div>
+        <div class="section product-popup-card" style="max-width: 320px; cursor:pointer;" data-title="Premium Rug" data-img="images/20250423_233615.jpg" data-desc="Premium rug for elegant spaces. Made of Jute + Cotton.">
+            <img src="images/20250423_233615.jpg" alt="Premium Rug" style="width:100%;border-radius:10px;">
+            <h2>Premium Rug</h2>
+            <p>Premium rug for elegant spaces. Made of Jute + Cotton.</p>
+        </div>
+        <div class="section product-popup-card" style="max-width: 320px; cursor:pointer;" data-title="Earthtone Rug" data-img="images/20250603_175743.jpg" data-desc="Earthtone rug for stylish homes. Made of 100% Polypropylene.">
+            <img src="images/20250603_175743.jpg" alt="Earthtone Rug" style="width:100%;border-radius:10px;">
+            <h2>Earthtone Rug</h2>
+            <p>Earthtone rug for stylish homes.  Made of 100% Polypropylene.</p>
+        </div>
+        <div class="section product-popup-card" style="max-width: 320px; cursor:pointer;" data-title="Artisan Braided Rug" data-img="images/20250817_164156.jpg" data-desc="Artisan braided round rug. Made of 100% Polypropylene.">
+            <img src="images/20250817_164156.jpg" alt="Artisan Braided Rug" style="width:100%;border-radius:10px;">
+            <h2>Artisan Braided Rug</h2>
+            <p>Artisan braided round rug. Made of 100% Polypropylene.</p>
+        </div>
+
+        <!-- some changes -->
+        <div class="section product-popup-card" style="max-width: 320px; cursor:pointer;" data-title="Luxury Woolen Rug" data-img="images\IMG_20220326_105144__01 (1).jpg" data-desc="Experience the luxury of pure wool. Made of wool + cotton.">
+            <img src="images\IMG_20220326_105144__01 (1).jpg" alt="Luxury Woolen Rug" style="width:100%;border-radius:10px;">
+            <h2>Luxury Woolen Rug</h2>
+            <p>Experience the luxury of pure wool. Made of Wool + Cotton.</p>
+        </div>
+
+        <div class="section product-popup-card" style="max-width: 320px; cursor:pointer;" data-title="Woolen Art Rug" data-img="images\IMG-20250913-WA0022 (2).jpg" data-desc="Wool woven with Modern Artisery. Made of wool + cotton.">
+            <img src="images\IMG-20250913-WA0022 (2).jpg" alt="Woolen Art Rug" style="width:100%;border-radius:10px;">
+            <h2>Woolen Art Rug</h2>
+            <p>Wool woven with Modern Artisery. Made of Wool + Cotton. </p>
+        </div>
+
+        <div class="section product-popup-card" style="max-width: 320px; cursor:pointer;" data-title="Softhill Rug" data-img="images/IMG_20210914_130028__01.jpg" data-desc="Bring home the warmth of wool. Made of wool + cotton.">
+            <img src="images\IMG_20210914_130028__01.jpg" alt="Softhill Rug" style="width:100%;border-radius:10px;">
+            <h2>Softhill Rug</h2>
+            <p>Bring home the warmth of wool. Made of Wool + Cotton.</p>
+        </div>
+         
+        <div class="section product-popup-card" style="max-width: 320px; cursor:pointer;" data-title="Exclusive Multiple Rug" data-img="images/20250908_152341.jpg" data-desc="Exclusive rug for unique spaces. Made of 100% Polypropylene.">
+            <img src="images/20250908_152341.jpg" alt="Exclusive Multiple Rug" style="width:100%;border-radius:10px;">
+            <h2>Exclusive Multiple Rug</h2>
+            <p>Exclusive rug for unique spaces. Made of 100% Polypropylene.</p>
+        </div>
+        <div class="section product-popup-card" style="max-width: 320px; cursor:pointer;" data-title="Color Setcard" data-img="images/20250908_160258.jpg" data-desc="Multiple combination of Polypropylene colors. Made of 100% Polypropylene.">
+            <img src="images/20250908_160258.jpg" alt="Color Setcard" style="width:100%;border-radius:10px;">
+            <h2>Color Setcard </h2>
+            <p>Multiple combination of Polypropylene colors. Made of 100% Polypropylene.</p>
+        </div>
+    </section>
+    <!-- Modal for product details (unique to products page) -->
+    <div id="product-popup-modal" style="display:none;position:fixed;z-index:1000;left:0;top:0;width:100vw;height:100vh;background:rgba(44,62,80,0.45);align-items:center;justify-content:center;">
+        <div id="product-popup-content" style="background:#fff;border-radius:24px;padding:24px 64px 16px 64px;box-shadow:0 4px 32px rgba(44,62,80,0.18);max-width:500px;min-width:320px;width:90vw;min-height:340px;max-height:90vh;text-align:center;position:relative;display:flex;flex-direction:column;align-items:center;gap:12px;">
+            <div style="width:100%;height:220px;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:18px;">
+                <img id="popup-img" src="" alt="Product Image" style="width:100%;height:100%;object-fit:cover;display:block;">
+            </div>
+            <h2 id="popup-title" style="margin-top:4px;margin-bottom:2px;"></h2>
+            <p id="popup-desc" style="text-align:center;margin-top:2px;margin-bottom:0;"></p>
+            <span id="product-popup-close" style="position:absolute;top:18px;right:28px;font-size:2rem;color:#a67c52;cursor:pointer;font-weight:bold;transition:color 0.2s;">&times;</span>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <strong>Contact:</strong> <a href="thehomerugs1@gmail.com">thehomerugs1@gmail.com</a> | <span style="font-size:1.1em;vertical-align:middle;">☎️</span> +91 9170819983 / +91 8299449204
+        </div>
+      <strong>Follow us</strong> 
+     <div>
+            <a href="https://www.facebook.com/people/The-Home-Rugs/61580474822325/" class="icon-link facebook-icon"><i class="fa-brands fa-square-facebook"></i></i></a>
+            <a href="https://www.instagram.com/thehomerugs/" class="icon-link instagram-icon"><i class="fa-brands fa-instagram"></i></i></a>
+      </div>
+        <div>
+            &copy; 2025 Inspired Rug & Carpet Website. All Rights Reserved.
+        </div>
+    </footer>
+<script>
+// Hamburger menu for responsive nav
+function toggleMenu() {
+    const nav = document.getElementById('main-nav');
+    nav.classList.toggle('open');
+    document.getElementById('hamburger-menu').classList.toggle('active');
+}
+
+// Product modal popup (unique to products page)
+const popupModal = document.getElementById('product-popup-modal');
+const popupImg = document.getElementById('popup-img');
+const popupTitle = document.getElementById('popup-title');
+const popupDesc = document.getElementById('popup-desc');
+const popupClose = document.getElementById('product-popup-close');
+const productCards = document.getElementsByClassName('product-popup-card');
+for (let card of productCards) {
+    card.addEventListener('click', function() {
+        popupImg.src = card.getAttribute('data-img');
+        popupTitle.textContent = card.getAttribute('data-title');
+        popupDesc.textContent = card.getAttribute('data-desc');
+        popupModal.style.display = 'flex';
+    });
+}
+if (popupClose) {
+    popupClose.onclick = function() {
+        popupModal.style.display = 'none';
+    };
+}
+window.onclick = function(event) {
+    if (event.target === popupModal) {
+        popupModal.style.display = 'none';
+    }
+};
+</script>
+</body>
+</html>

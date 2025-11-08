@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">                    
+    <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="nav-wrapper" style="display:flex;align-items:center;gap:24px;">
+            <img src="images/logo.jpg" alt="Logo" style="height:48px;width:auto;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.07);background:#fff;">
+            <div class="hamburger" id="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <h1>About Us</h1>
+        <p>Excellence in Carpet & Rug Manufacturing Since 1995</p>
+    </section>
+    <section class="sections" style="flex-direction: column; align-items: stretch; padding: 0;">
+    <div class="section" style="max-width:1200px; margin:0 auto; width:100%; position:relative; text-align:left; border-radius:0; box-shadow:none; background:#f7f6f2; padding:40px 8vw;">
+            <h2>Our Story</h2>
+            <p>Founded in 1995, our factory has grown from a small family business into a leading manufacturer and exporter of hand-woven, hand-tufted, and machine-made carpets and rugs. Located in the heart of India's rug weaving region, we combine traditional craftsmanship with modern technology to deliver world-class products to over 15 countries.</p>
+            <h2>Quality Assurance</h2>
+            <p>Quality is at the core of our operations. Every carpet undergoes rigorous inspection at each stage—from yarn selection and dyeing to weaving and finishing. We use only premium raw materials and eco-friendly dyes, ensuring durability and vibrant colors.</p>
+            <h2>Certifications</h2>
+            <ul>
+                <li>ISO 9001:2015 Certified</li>
+                <li>Good Weave Member (No Child Labor)</li>
+                <li>Global Organic Textile Standard (GOTS)</li>
+            </ul>
+            <h2>Our Products</h2>
+            <p>We offer a wide range of products from size 1 X 1 ft. to 15 X 90 ft. including hand-knotted rugs, hand-tufted rugs, machine-made rugs, doormats, area rugs, broad rolls(wall to wall) of size 15 X 90 ft. and custom designs for residential, commercial, indoor, outdoor rugs and hospitality projects.</p>
+            <h2>Sustainability</h2>
+            <p>We are committed to sustainable practices —using organic fibers and minimizing waste. Our factory supports local communities and provides fair wages and safe working conditions for all employees.</p>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <strong>Contact:</strong><a href="thehomerugs1@gmail.com">thehomerugs1@gmail.com</a> | <span style="font-size:1.1em;vertical-align:middle;">☎️</span> +91 9170819983 / +91 8299449204
+        </div>
+      <strong>Follow us</strong> 
+     <div>
+            <a href="https://www.facebook.com/people/The-Home-Rugs/61580474822325/" class="icon-link facebook-icon"><i class="fa-brands fa-square-facebook"></i></i></a>
+            <a href="https://www.instagram.com/thehomerugs/" class="icon-link instagram-icon"><i class="fa-brands fa-instagram"></i></i></a>
+      </div>
+        <div>
+            &copy; 2025 Inspired Rug & Carpet Website. All Rights Reserved.
+        </div>
+    </footer>
+<script>
+// Hamburger menu for responsive nav
+function toggleMenu() {
+    const nav = document.getElementById('main-nav');
+    nav.classList.toggle('open');
+    document.getElementById('hamburger-menu').classList.toggle('active');
+}
+</script>
+</body>
+</html>

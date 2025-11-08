@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspired Rug & Carpet Website</title>
+    <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="nav-wrapper" style="display:flex;align-items:center;gap:24px;">
+            <img src="images/logo.jpg" alt="Logo" style="height:48px;width:auto;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.07);background:#fff; align-content: left ;">
+            <div class="hamburger" id="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carousel moved above hero section -->
+
+    <div class="carousel-container">
+        <div class="carousel">
+             <img src="images\page1.png" class="carousel-slide" style="display:block;" alt="Slide 1">
+            <img src="images\machine.jpg" class="carousel-slide" style="display:block;" alt="Slide 2">
+            <img src="images\20250421_201754.jpg" class="carousel-slide" style="display:none;" alt="Slide 3">
+            <img src="images\20250920_183812 (1).jpg" class="carousel-slide" style="display:none;" alt="Slide 4">
+            <button class="carousel-btn prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="plusSlides(1)">&#10095;</button>
+            <div class="carousel-dots" id="carousel-dots">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+    <section class="hero" id="home">
+        <h1>Inspired by Superior and Ancient Rug & Carpet Civilization</h1>
+        <p>Crafted with precise handwork artistry and aesthetic designs & patterns. Redefining modern homes with royal Persian luxury!</p>
+    </section>
+    <section class="sections">
+        <div class="section">
+            <h2>Unique-Designs</h2>
+            <p>Innovative designs and patterns, always bringing something new and unique for your home.</p>
+        </div>
+        <div class="section">
+            <h2>Hand-Crafted</h2>
+            <p>Mastery in hand-woven, hand-tufted, hand-loomed, and hand-knotted products.</p>
+        </div>
+        <div class="section">
+            <h2>Variety</h2>
+            <p>A wide range of product categories, designs, and patterns for every need and budget.</p>
+        </div>
+        <div class="section">
+            <h2>Quality</h2>
+            <p>Uncompromising quality from yarn selection to final product, representing our values.</p>
+        </div>
+        <div class="section">
+            <h2>Luxury</h2>
+            <p>Royal luxury inspired by Persian heritage, using premium yarn and dyes for masterpieces.</p>
+        </div>
+        <div class="section">
+            <h2>Sustainable</h2>
+            <p>Organic fabrics and eco-friendly processes for a better planet and future generations.</p>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <strong>Contact:</strong><a href="thehomerugs1@gmail.com">thehomerugs1@gmail.com</a> | <span style="font-size:1.1em;vertical-align:middle;">☎️</span> +91 9170819983 / +91 8299449204
+        </div>
+        
+      <strong>Follow us</strong> 
+     <div>
+            <a href="https://www.facebook.com/people/The-Home-Rugs/61580474822325/" class="icon-link facebook-icon"><i class="fa-brands fa-square-facebook"></i></i></a>
+            <a href="https://www.instagram.com/thehomerugs/" class="icon-link instagram-icon"><i class="fa-brands fa-instagram"></i></i></a>
+      </div>
+
+
+
+        <div>
+            &copy; 2025 Inspired Rug & Carpet Website. All Rights Reserved.
+        </div>
+    </footer>
+<script>
+// Carousel
+let slideIndex = 0;
+const slides = document.getElementsByClassName('carousel-slide');
+const dots = document.getElementsByClassName('dot');
+const showSlide = (n) => {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+        if (dots[i]) dots[i].classList.remove('active');
+    }
+    slides[n].style.display = 'block';
+    if (dots[n]) dots[n].classList.add('active');
+};
+const plusSlides = (n) => {
+    slideIndex += n;
+    if (slideIndex >= slides.length) slideIndex = 0;
+    if (slideIndex < 0) slideIndex = slides.length - 1;
+    showSlide(slideIndex);
+};
+const currentSlide = (n) => {
+    slideIndex = n;
+    showSlide(slideIndex);
+};
+setInterval(() => { plusSlides(1); }, 4000);
+showSlide(slideIndex);
+
+// Hamburger menu
+function toggleMenu() {
+    const nav = document.getElementById('main-nav');
+    nav.classList.toggle('open');
+    document.getElementById('hamburger-menu').classList.toggle('active');
+}
+</script>
+</body>
+</html>
