@@ -1,4 +1,7 @@
 // server.js
+// Load environment variables
+require('dotenv').config();
+
 const express = require("express");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
@@ -13,19 +16,25 @@ app.use(bodyParser.json());
 app.post("/send", async (req, res) => {
   const { name, email, message } = req.body;
 
+  // Validate environment variables
+  if (!process.env.EMAIL_USER || !process.env.EMAIL_PASSWORD || !process.env.EMAIL_RECIPIENT) {
+    console.error("Missing required environment variables");
+    return res.status(500).send("❌ Server configuration error.");
+  }
+
   // Create transporter for Gmail
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "thehomerugs1@gmail.com",         // ✨ your Gmail ID
-      pass: "jhkcqpqvwspemgin",      // ✨ your Google App Password
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASSWORD,
     },
   });
 
   // Email details
   const mailOptions = {
-    from: 'thehomerugs1@gmail.com',
-    to: "jameemaqavi@gmail.com",             // where you’ll receive the message
+    from: process.env.EMAIL_USER,
+    to: process.env.EMAIL_RECIPIENT,
     subject: `New message from ${name}`,
     text: `
       Name: ${name}
@@ -45,7 +54,8 @@ app.post("/send", async (req, res) => {
 });
 
 // Start server
-app.listen(3000, () => console.log("Server running on http://localhost:3000"));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
 
 
 // require('dotenv').config();

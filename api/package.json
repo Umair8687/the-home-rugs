@@ -1,0 +1,9 @@
+{
+  "name": "the-home-rugs-api",
+  "version": "1.0.0",
+  "description": "Serverless API for The Home Rugs contact form",
+  "main": "send.js",
+  "dependencies": {
+    "nodemailer": "^7.0.10"
+  }
+}
