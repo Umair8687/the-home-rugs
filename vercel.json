@@ -1,26 +1,4 @@
 {
-  "version": 2,
-  "name": "the-home-rugs",
-  "builds": [
-    {
-      "src": "Website/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/Website/$1"
-    }
-  ],
   "rewrites": [
     {
       "source": "/",
