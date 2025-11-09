@@ -127,9 +127,14 @@ html, body {
 .carousel-slide {
     width: 100%;
     height: 80vh;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 24px;
     transition: opacity 0.5s;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: high-quality;
+    -ms-interpolation-mode: bicubic;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 }
 .carousel-btn {
     position: absolute;
@@ -261,6 +266,7 @@ footer a:hover {
     .carousel-slide {
         height: 320px;
         border-radius: 16px;
+        object-fit: cover;
     }
 }
 
@@ -279,6 +285,7 @@ footer a:hover {
     .carousel-slide {
         height: 160px;
         border-radius: 8px;
+        object-fit: cover;
     }
     .sections {
         flex-direction: column;
@@ -307,6 +314,7 @@ footer a:hover {
     }
     .carousel-slide {
         height: 100px;
+        object-fit: cover;
     }
     .section {
         padding: 12px 4px;
